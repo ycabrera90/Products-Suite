@@ -1,4 +1,71 @@
 .header {
-    border: red 1px solid;
     height: 420px;
+    background: #d2d2d2;
+
+
+    .slide-container {
+        display: flex;
+        justify-content: center;
+        margin: 0 auto;
+        padding: 0 12rem ;
+
+        .product-info {
+            flex: 45%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            height: 420px;
+
+            h3 {
+                opacity: 0.502;
+                font-size: 42px;
+                text-transform: uppercase;
+                color: #000000;
+                font-weight: 300;
+                font-family: "Roboto";
+                margin: 0 0.5rem;
+            }
+
+            h1 {
+                opacity: 0.502;
+                font-size: 170px;
+                line-height: 160px;
+
+                color: #000000;
+                font-weight: 900;
+                font-family: "Roboto";
+                margin: 0;
+            }
+
+            button {
+                display: block;
+                width: 358px;
+                height: 90px;
+                border-radius: 10px;
+                background-color: #4da6e4;
+                border: none;
+                margin: 0.5rem;
+
+                font-size: 28px;
+                letter-spacing: 8px;
+                line-height: 18px;
+                text-transform: uppercase;
+                color: #ffffff;
+                font-weight: 700;
+                font-family: "Roboto";
+            }
+        }
+
+        .product-cost {
+            flex: 45%;
+            height: 420px;
+            margin-left: -47px;
+            margin-top: -55px;
+
+            img {
+                width: 677px;
+                height: 633px;
+            }
+        }
+    }
 }

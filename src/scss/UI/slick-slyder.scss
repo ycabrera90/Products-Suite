@@ -1,0 +1,44 @@
+.slider {
+    width: 100%;
+    // height: 100%;
+
+    .slick-list{
+        overflow: visible;
+    }
+}
+
+.slick-slide {
+    margin: 0px 20px;
+}
+
+.slick-slide img {
+    width: 100%;
+}
+
+.slick-prev:before,
+.slick-next:before {
+    color: red;
+}
+
+.slick-prev {
+    left: 5px;
+    z-index: 1;
+}
+
+.slick-next {
+    right: 5px;
+    z-index: 1;
+}
+
+.slick-slide {
+    transition: all ease-in-out .3s;
+    opacity: .2;
+}
+
+.slick-active {
+    opacity: .5;
+}
+
+.slick-current {
+    opacity: 1;
+}

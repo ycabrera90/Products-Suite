@@ -1,7 +1,64 @@
-@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap");
 .header {
-  border: red 1px solid;
   height: 420px;
+  background: #d2d2d2;
+}
+.header .slide-container {
+  display: flex;
+  justify-content: center;
+  margin: 0 auto;
+  padding: 0 12rem;
+}
+.header .slide-container .product-info {
+  flex: 45%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 420px;
+}
+.header .slide-container .product-info h3 {
+  opacity: 0.502;
+  font-size: 42px;
+  text-transform: uppercase;
+  color: #000000;
+  font-weight: 300;
+  font-family: "Roboto";
+  margin: 0 0.5rem;
+}
+.header .slide-container .product-info h1 {
+  opacity: 0.502;
+  font-size: 170px;
+  line-height: 160px;
+  color: #000000;
+  font-weight: 900;
+  font-family: "Roboto";
+  margin: 0;
+}
+.header .slide-container .product-info button {
+  display: block;
+  width: 358px;
+  height: 90px;
+  border-radius: 10px;
+  background-color: #4da6e4;
+  border: none;
+  margin: 0.5rem;
+  font-size: 28px;
+  letter-spacing: 8px;
+  line-height: 18px;
+  text-transform: uppercase;
+  color: #ffffff;
+  font-weight: 700;
+  font-family: "Roboto";
+}
+.header .slide-container .product-cost {
+  flex: 45%;
+  height: 420px;
+  margin-left: -47px;
+  margin-top: -55px;
+}
+.header .slide-container .product-cost img {
+  width: 677px;
+  height: 633px;
 }
 
 .main {
@@ -186,6 +243,49 @@
   padding: 0;
 }
 
+.slider {
+  width: 100%;
+}
+.slider .slick-list {
+  overflow: visible;
+}
+
+.slick-slide {
+  margin: 0px 20px;
+}
+
+.slick-slide img {
+  width: 100%;
+}
+
+.slick-prev:before,
+.slick-next:before {
+  color: red;
+}
+
+.slick-prev {
+  left: 5px;
+  z-index: 1;
+}
+
+.slick-next {
+  right: 5px;
+  z-index: 1;
+}
+
+.slick-slide {
+  transition: all ease-in-out 0.3s;
+  opacity: 0.2;
+}
+
+.slick-active {
+  opacity: 0.5;
+}
+
+.slick-current {
+  opacity: 1;
+}
+
 /* Slider */
 .slick-slider {
   position: relative;
@@ -283,8 +383,10 @@
   box-sizing: border-box;
 }
 
+html,
 body {
   margin: 0;
+  padding: 0;
 }
 
 select:focus,
