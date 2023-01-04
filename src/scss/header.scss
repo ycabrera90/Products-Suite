@@ -2,13 +2,12 @@
     height: 420px;
     background: #d2d2d2;
 
-
     .slide-container {
         display: flex;
         justify-content: space-around;
         margin: 0 auto;
         padding: 0 5rem;
-        border: red 1px solid;
+        // border: red 1px solid;
 
         .product-info {
             display: flex;
@@ -45,11 +44,10 @@
                 background-color: #4da6e4;
                 border: none;
                 margin: 0.5rem;
+                cursor: pointer;
 
                 font-size: 28px;
                 letter-spacing: 8px;
-                line-height: 18px;
-                text-transform: uppercase;
                 color: #ffffff;
                 font-weight: 700;
                 font-family: "Roboto";

@@ -17,16 +17,28 @@
 
 .slick-prev:before,
 .slick-next:before {
-    color: red;
+    color: #ffffff;
+    font-size: 90px;
+    opacity: 1;
+    font-weight: 900;
+    position: relative;
+    left: -12px;
+}
+
+.slick-arrow{
+    height: 70px;
+    width: 70px;
+    border-radius: 50%;
+    background-color: #4da6e4 !important;
 }
 
 .slick-prev {
-    left: 5px;
+    left: 25px;
     z-index: 1;
 }
 
 .slick-next {
-    right: 5px;
+    right: 25px;
     z-index: 1;
 }
 
