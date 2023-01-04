@@ -281,9 +281,6 @@
 .slider {
   width: 100%;
 }
-.slider .slick-list {
-  overflow: visible;
-}
 
 .slick-slide {
   margin: 0px 20px;
