@@ -7,7 +7,7 @@
         display: flex;
         justify-content: space-around;
         margin: 0 auto;
-        padding: 0 5rem ;
+        padding: 0 5rem;
         border: red 1px solid;
 
         .product-info {
@@ -60,10 +60,54 @@
             height: 420px;
             margin-left: -47px;
             margin-top: -55px;
+            position: relative;
 
             img {
                 width: 677px;
                 height: 633px;
+            }
+
+            .cost-container {
+                width: fit-content;
+                position: absolute;
+                top: 225px;
+                left: 225px;
+
+                .currency {
+                    font-size: 41px;
+                    color: #ffffff;
+                    font-weight: 900;
+                    font-family: "Roboto";
+                    margin: 0;
+                }
+
+                .cost {
+                    display: flex;
+                }
+
+                .cost-value {
+                    font-size: 146px;
+                    line-height: 135px;
+                    color: #ffffff;
+                    font-weight: 900;
+                    font-family: "Roboto";
+                    margin: 0;
+                }
+
+                .plan {
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: space-between;
+                    padding: 0.5rem 0;
+
+                    > h3 {
+                        font-size: 39px;
+                        color: #ffffff;
+                        font-weight: 900;
+                        font-family: "Roboto";
+                        margin: 0;
+                    }
+                }
             }
         }
     }

@@ -54,10 +54,48 @@
   height: 420px;
   margin-left: -47px;
   margin-top: -55px;
+  position: relative;
 }
 .header .slide-container .product-cost img {
   width: 677px;
   height: 633px;
+}
+.header .slide-container .product-cost .cost-container {
+  width: fit-content;
+  position: absolute;
+  top: 225px;
+  left: 225px;
+}
+.header .slide-container .product-cost .cost-container .currency {
+  font-size: 41px;
+  color: #ffffff;
+  font-weight: 900;
+  font-family: "Roboto";
+  margin: 0;
+}
+.header .slide-container .product-cost .cost-container .cost {
+  display: flex;
+}
+.header .slide-container .product-cost .cost-container .cost-value {
+  font-size: 146px;
+  line-height: 135px;
+  color: #ffffff;
+  font-weight: 900;
+  font-family: "Roboto";
+  margin: 0;
+}
+.header .slide-container .product-cost .cost-container .plan {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 0.5rem 0;
+}
+.header .slide-container .product-cost .cost-container .plan > h3 {
+  font-size: 39px;
+  color: #ffffff;
+  font-weight: 900;
+  font-family: "Roboto";
+  margin: 0;
 }
 
 .main {
