@@ -45,16 +45,8 @@
         flex-wrap: wrap;
         gap: 1rem;
 
-        .custom-input {
+        .custom-select {
             flex: 45%;
-
-            select {
-                border: none;
-                font-family: 'Roboto', sans-serif;
-                font-size: 16px;
-                font-weight: 300;
-                color: black;
-            }
         }
     }
 
@@ -68,39 +60,10 @@
         .custom-input {
             flex: 45%;
         }
-
-        .custom-ckeckbox {
-            flex: 45%;
-            display: flex;
-            align-items: center;
-            gap: 0.4rem;
-
-            label {
-                font-family: 'Roboto', sans-serif;
-                font-size: 16px;
-                font-weight: 300;
-                color: black;
-            }
-        }
-
     }
 
     .user-submit {
         display: flex;
         justify-content: center;
-
-        button {
-            width: 100%;
-            max-width: 200px;
-            height: 40px;
-            border: none;
-            border-radius: 4px;
-            background-color: #4da6e4;
-            color: #ffffff;
-            font-family: 'Roboto', sans-serif;
-            font-size: 16px;
-            font-weight: 400;
-            cursor: pointer;
-        }
     }
 }
