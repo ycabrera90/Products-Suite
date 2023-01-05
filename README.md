@@ -11,3 +11,5 @@ Respecto al header la hubicacion del texto y la macha se ven exactamente igual q
 Un efecto hover fue añadido a las card para darle vida a la pagina sin alterar los requerimientos del diseño.
 
 Un effecto hover fue añadido al boton de "Enviar" para mejorar la experiencia de usuario.
+
+Un efecto hover fue añadido al boton de "COMPRAR" para mejorar la experiencia de usuario.

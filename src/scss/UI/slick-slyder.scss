@@ -33,7 +33,7 @@
 .slick-prev {
     left: 25px;
     z-index: 1;
-    display: none !important; // <-- original doesn't have this
+    // display: none !important; // <-- original doesn't have this
 
     @media (min-width: 40rem) {
         display: block !important; // <-- original doesn't have this
@@ -43,7 +43,7 @@
 .slick-next {
     right: 25px;
     z-index: 1;
-    display: none !important; // <-- original doesn't have this
+    // display: none !important; // <-- original doesn't have this
 
     @media (min-width: 40rem) {
         display: block !important;  // <-- original doesn't have this
