@@ -1,3 +1,4 @@
+import { slideItems } from "./UI/slideItem";
 import { cardArticle } from "./UI/cardArticle";
 import { customCheckbox } from "./UI/customCheckBox";
 import { customInput } from "./UI/customInput";
@@ -10,8 +11,10 @@ import { formHandler } from "./Utility/formHandler";
 
 class App {
     static init() {
-        // render header
-        
+        // render slides
+        slideItems('sliderContainer');
+        slideItems('sliderContainer');
+
 
         // render cards
         // cardArticle("cardContainer", articles );
@@ -31,8 +34,8 @@ class App {
     }
 }
 
-addEventListener("DOMContentLoaded", App.init);
+// addEventListener("DOMContentLoaded", App.init);
 
-
+App.init()
 
 
