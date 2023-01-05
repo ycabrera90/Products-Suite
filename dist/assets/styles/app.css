@@ -107,6 +107,11 @@
   font-family: "Roboto", sans-serif;
   margin: 2.2rem 0;
 }
+.main .card-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  grid-gap: 1rem 2rem;
+}
 
 .footer {
   display: flex;
@@ -313,12 +318,7 @@
   display: none;
 }
 
-.card-container {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
-  grid-gap: 2rem;
-}
-.card-container .card {
+.card {
   width: 100%;
   min-width: 285px;
   height: 455px;
@@ -326,20 +326,28 @@
   background-color: #ffffff;
   border: 1px solid #cccccc;
   overflow: hidden;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  transition: all 0.1s ease-in-out;
 }
-.card-container .card .image {
+.card:nth-child(2n) {
+  margin-top: 1rem;
+}
+.card:hover {
+  transform: scale(1.02);
+}
+.card .image {
   width: 100%;
   height: 45%;
   background-color: #b2b2b2;
 }
-.card-container .card .content {
+.card .content {
   padding: 1rem;
   display: flex;
   flex-direction: column;
   height: 55%;
   justify-content: space-around;
 }
-.card-container .card .content .title {
+.card .content .title {
   font-size: 24px;
   color: #000000;
   font-weight: 500;
@@ -350,7 +358,7 @@
   -webkit-box-orient: vertical;
   overflow: hidden;
 }
-.card-container .card .content .description {
+.card .content .description {
   font-size: 16px;
   line-height: 21px;
   color: #000000;
@@ -484,6 +492,10 @@
   font-size: 16px;
   font-weight: 400;
   cursor: pointer;
+  transition: all 0.1s ease-in-out;
+}
+.custom-subit-button:hover {
+  background-color: #3c8dc7;
 }
 
 * {
