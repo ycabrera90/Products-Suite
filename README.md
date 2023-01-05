@@ -1,17 +1,51 @@
-Se respetan los tamaños de diseño para una pantalla de 1280px segun diseño
+# Products suite
+On this [web page](https://eip-products-suite.web.app/) you can see the layout of a generic products suite.
 
-320px
+## Built with
+This project was developed using the following technoligies:
+* [HTML5](https://developer.mozilla.org/es/docs/Glossary/HTML5) - HyperText Markup Language
+* [ES6](https://developer.mozilla.org/es/docs/Web/JavaScript) - JavaScript language.
+* [Sass](https://sass-lang.com/) - CSS extension language
+* [jQuery](https://jquery.com/) - JavaScript library
+* [Firebase](https://firebase.google.com/?gclid=CjwKCAiAh9qdBhAOEiwAvxIok3J8nI-zvku3-9y1V7vpSI4R2o-O-8kHelH8p6Ajg8YQbq_TRTLrlxoCr_4QAvD_BwE&gclsrc=aw.ds) - Deployment platform
+  
 
-Debido a que el diseño el titulo y la descripcion de las cards no tienen una alineacion uniforme en lo vertical, tome la desicion de alinearlas distribuyendo es espacio vacio de manera uniforme en el eje vertical.
 
-El titulo del card fue limitado a 2 lineas para evitar que textos mas grandes dañen el diseño. Si el texto de titulo es mas largo, se corta y se agrega un "..." al final.
+## Clone and run app
+These instructions will allow you to obtain a copy of the project on your local machine for development and test purposes.
+Look the [**deployment**](https://eip-products-suite.web.app/) so you can see the final result.
 
-La descripcion del card fue limitada a 6 lineas para evitar que textos mas grandes dañen el diseño. Si el texto de descripcion es mas largo, se corta y se agrega un "..." al final.
 
-Respecto al header la hubicacion del texto y la macha se ven exactamente igual que en el diseño para 1280. Para pantallas mayores se distribuye el espacio de manera uniforme en el eje horizontal conservando los mismos tamaños.
+#### Pre-requirements
+For run this project you must have installed the following packages in your local machine
 
-Un efecto hover fue añadido a las card para darle vida a la pagina sin alterar los requerimientos del diseño.
+* [NodeJs](https://nodejs.org/en/) 
+* [NPM](https://docs.npmjs.com/downloading-and-installing-node-js-and-npm)
 
-Un effecto hover fue añadido al boton de "Enviar" para mejorar la experiencia de usuario.
+#### Clone and serve
+For clone the project you need open a terminal, go to the folder which you want to work and put the follows commands
+```
+git clone https://github.com/ycabrera90/Products-Suite.git
 
-Un efecto hover fue añadido al boton de "COMPRAR" para mejorar la experiencia de usuario.
+cd Products-Suite
+
+npm install
+
+npm run build:dev
+```
+
+## Authors
+* [**Yosniel Cabrera**](https://www.linkedin.com/in/eip-studios/) - *React/NextJs Developer* 
+  
+## License
+This project is **public** and only for academic purposes.
+
+## Read More 🎁
+* Nothing important so far  :-)
+
+<br>
+
+[⬆ Back to top](#products-suite)<br>
+  
+---
+yosniel.ch@gmail.com
