@@ -68,8 +68,9 @@ export const formHandler = (domId) => {
     }
 
     if (!checkbox.checked) {
-      //   alert("Debe aceptar las bases y condiciones");
       checkbox.parentElement.classList.add("error");
+      checkbox.parentElement.parentElement.lastElementChild.textContent =
+        "Debe aceptar las bases y condiciones";
       return;
     }
 
