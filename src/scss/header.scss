@@ -1,8 +1,17 @@
 .header {
-    height: 330px;
-    background: #d2d2d2;
+    overflow: hidden;
 
     @media (min-width: 840px) {
-        height: 420px;
+        height: 510px;
+        margin-bottom: -90px;
+    }
+
+    .product-slider {
+        background: #d2d2d2;
+        height: 330px;
+
+        @media (min-width: 840px) {
+            height: 420px;
+        }
     }
 }

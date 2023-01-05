@@ -6,5 +6,3 @@ $(document).on("ready", function () {
     slidesToScroll: 1,
   });
 });
-
-console.log("slickEngine.js");

@@ -5,6 +5,7 @@ import { customInput } from "./UI/customInput";
 import { customSelect } from "./UI/customSelect";
 import { customSubmitButton } from "./UI/customSubmitButton";
 
+import { trendingProducts } from "./Mocks/trendingProducts";
 import { dptosLocs } from "./Mocks/departments";
 import { articles } from "./Mocks/artilcles";
 import { formHandler } from "./Utility/formHandler";
@@ -12,29 +13,25 @@ import { formHandler } from "./Utility/formHandler";
 class App {
     static init() {
         // render slides
-        slideItems('sliderContainer');
-        slideItems('sliderContainer');
-
+        slideItems('sliderContainer',trendingProducts);
 
         // render cards
-        // cardArticle("cardContainer", articles );
+        cardArticle("cardContainer", articles );
         
         // render of form fields 
-        // customInput("userNameDatas", "NOMBRE", "Nombre");
-        // customInput("userNameDatas", "APELLIDO", "Apellido");
-        // customInput("userEmailDatas", "E-MAIL", "e-Mail", "email");
-        // customSelect("userLocationDatas", "Departamento", dptosLocs);
-        // customSelect("userLocationDatas", "Localidad", dptosLocs, "Departamento");
-        // customInput("userCiDatas", "CI", "1.111.111-1");
-        // customCheckbox("userCiDatas", "Acepto las bases y condiciones")
-        // customSubmitButton("submitButton", "ENVIAR");
+        customInput("userNameDatas", "NOMBRE", "Nombre");
+        customInput("userNameDatas", "APELLIDO", "Apellido");
+        customInput("userEmailDatas", "E-MAIL", "e-Mail", "email");
+        customSelect("userLocationDatas", "Departamento", dptosLocs);
+        customSelect("userLocationDatas", "Localidad", dptosLocs, "Departamento");
+        customInput("userCiDatas", "CI", "1.111.111-1");
+        customCheckbox("userCiDatas", "Acepto las bases y condiciones")
+        customSubmitButton("submitButton", "ENVIAR");
 
-        // // form logic
-        // formHandler("userDatasForm");
+        // form logic
+        formHandler("userDatasForm");
     }
 }
-
-// addEventListener("DOMContentLoaded", App.init);
 
 App.init()
 
