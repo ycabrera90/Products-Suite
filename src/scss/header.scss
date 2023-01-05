@@ -57,18 +57,17 @@
 
             .product-cost {
                 height: 330px;
-                border: red 1px solid;
                 position: absolute;
                 right: -70px;
                 width: 245px;
                 overflow: hidden;
 
                 .img-small {
-                    width: 314px;
-                    height: 255px;
                     position: absolute;
                     right: -74px;
                     top: 48px;
+                    width: 314px;
+                    height: 255px;
                     z-index: -1;
 
                     @media(min-width: 40rem) {
@@ -77,13 +76,12 @@
                 }
 
                 .cost-container {
-                    width: fit-content;
                     position: absolute;
-                    top: 225px;
-                    left: 225px;
+                    top: 115px;
+                    left: 93px;
 
                     .currency {
-                        font-size: 41px;
+                        font-size: 19px;
                         color: #ffffff;
                         font-weight: 900;
                         font-family: "Roboto";
@@ -92,31 +90,33 @@
 
                     .cost {
                         display: flex;
-                    }
 
-                    .cost-value {
-                        font-size: 146px;
-                        line-height: 135px;
-                        color: #ffffff;
-                        font-weight: 900;
-                        font-family: "Roboto";
-                        margin: 0;
-                    }
-
-                    .plan {
-                        display: flex;
-                        flex-direction: column;
-                        justify-content: space-between;
-                        padding: 0.5rem 0;
-
-                        >h3 {
-                            font-size: 39px;
+                        .cost-value {
+                            font-size: 67px;
+                            line-height: 50px;
                             color: #ffffff;
                             font-weight: 900;
                             font-family: "Roboto";
                             margin: 0;
                         }
+
+                        .plan {
+                            display: flex;
+                            flex-direction: column;
+                            justify-content: space-between;
+
+                            >h3 {
+                                font-size: 18px;
+                                color: #ffffff;
+                                font-weight: 900;
+                                font-family: "Roboto";
+                                margin: 0;
+                            }
+                        }
                     }
+
+
+
                 }
             }
 

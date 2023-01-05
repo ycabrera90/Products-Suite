@@ -51,18 +51,17 @@
 }
 .header .product-slider .slide-container .product-cost {
   height: 330px;
-  border: red 1px solid;
   position: absolute;
   right: -70px;
   width: 245px;
   overflow: hidden;
 }
 .header .product-slider .slide-container .product-cost .img-small {
-  width: 314px;
-  height: 255px;
   position: absolute;
   right: -74px;
   top: 48px;
+  width: 314px;
+  height: 255px;
   z-index: -1;
 }
 @media (min-width: 40rem) {
@@ -71,13 +70,12 @@
   }
 }
 .header .product-slider .slide-container .product-cost .cost-container {
-  width: fit-content;
   position: absolute;
-  top: 225px;
-  left: 225px;
+  top: 115px;
+  left: 93px;
 }
 .header .product-slider .slide-container .product-cost .cost-container .currency {
-  font-size: 41px;
+  font-size: 19px;
   color: #ffffff;
   font-weight: 900;
   font-family: "Roboto";
@@ -86,22 +84,21 @@
 .header .product-slider .slide-container .product-cost .cost-container .cost {
   display: flex;
 }
-.header .product-slider .slide-container .product-cost .cost-container .cost-value {
-  font-size: 146px;
-  line-height: 135px;
+.header .product-slider .slide-container .product-cost .cost-container .cost .cost-value {
+  font-size: 67px;
+  line-height: 50px;
   color: #ffffff;
   font-weight: 900;
   font-family: "Roboto";
   margin: 0;
 }
-.header .product-slider .slide-container .product-cost .cost-container .plan {
+.header .product-slider .slide-container .product-cost .cost-container .cost .plan {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  padding: 0.5rem 0;
 }
-.header .product-slider .slide-container .product-cost .cost-container .plan > h3 {
-  font-size: 39px;
+.header .product-slider .slide-container .product-cost .cost-container .cost .plan > h3 {
+  font-size: 18px;
   color: #ffffff;
   font-weight: 900;
   font-family: "Roboto";
