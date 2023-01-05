@@ -15,19 +15,20 @@ export const customSelect = (domId, placeholder, items, ref) => {
           <option value="">${placeholder}</option>
           ${content}
         </select>
+        <p></p>
       </div>
     `;
 
   // load the options based to the ref
   if (items && ref) {
-    document.getElementById(ref).addEventListener("change", (e) => {
+    container.querySelector(`#${ref}`).addEventListener("change", (e) => {
       content = `<option value="">${placeholder}</option>`;
       const selectedValue = e.target.value;
       if (selectedValue !== "") {
-        items[e.target.value].forEach((item) => {
+        items[selectedValue].forEach((item) => {
           content += `<option value="${item}">${item}</option>`;
         });
-        document.getElementById(placeholder).innerHTML = content;
+        container.querySelector(`#${placeholder}`).innerHTML = content;
       }
     });
   }
@@ -35,7 +36,9 @@ export const customSelect = (domId, placeholder, items, ref) => {
   // remove the error class when the select is focused
   setTimeout(() => {
     container.querySelector(`select#${placeholder}`).addEventListener("focus", (e) => {
-      e.target.parentElement.classList.remove("error");
+      const selectDOM = e.target;
+      selectDOM.parentElement.classList.remove("error");
+      selectDOM.parentElement.lastElementChild.innerHTML = "";
     });
   }, 10);
 };

@@ -29,4 +29,13 @@
         font-weight: 300;
         color: black;
     }
+
+    p {
+        display: block;
+        font-family: 'Roboto', sans-serif;
+        font-size: 8px;
+        color: red;
+        margin: 0 0.3rem;
+        opacity: 0.8;
+    }
 }
