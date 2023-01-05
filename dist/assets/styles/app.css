@@ -107,54 +107,6 @@
   font-family: "Roboto", sans-serif;
   margin: 2.2rem 0;
 }
-.main .card-container {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
-  grid-gap: 2rem;
-}
-.main .card-container .card {
-  width: 100%;
-  min-width: 285px;
-  height: 455px;
-  border-radius: 10px;
-  background-color: #ffffff;
-  border: 1px solid #cccccc;
-  overflow: hidden;
-}
-.main .card-container .card .image {
-  width: 100%;
-  height: 45%;
-  background-color: #b2b2b2;
-}
-.main .card-container .card .content {
-  padding: 1rem;
-  display: flex;
-  flex-direction: column;
-  height: 55%;
-  justify-content: space-around;
-}
-.main .card-container .card .content .title {
-  font-size: 24px;
-  color: #000000;
-  font-weight: 500;
-  font-family: "Roboto", sans-serif;
-  margin: 0.2rem 0;
-  display: -webkit-box;
-  -webkit-line-clamp: 2;
-  -webkit-box-orient: vertical;
-  overflow: hidden;
-}
-.main .card-container .card .content .description {
-  font-size: 16px;
-  line-height: 21px;
-  color: #000000;
-  font-weight: 400;
-  font-family: "Roboto", sans-serif;
-  display: -webkit-box;
-  -webkit-line-clamp: 6;
-  -webkit-box-orient: vertical;
-  overflow: hidden;
-}
 
 .footer {
   display: flex;
@@ -359,6 +311,55 @@
 
 .slick-arrow.slick-hidden {
   display: none;
+}
+
+.card-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  grid-gap: 2rem;
+}
+.card-container .card {
+  width: 100%;
+  min-width: 285px;
+  height: 455px;
+  border-radius: 10px;
+  background-color: #ffffff;
+  border: 1px solid #cccccc;
+  overflow: hidden;
+}
+.card-container .card .image {
+  width: 100%;
+  height: 45%;
+  background-color: #b2b2b2;
+}
+.card-container .card .content {
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  height: 55%;
+  justify-content: space-around;
+}
+.card-container .card .content .title {
+  font-size: 24px;
+  color: #000000;
+  font-weight: 500;
+  font-family: "Roboto", sans-serif;
+  margin: 0.2rem 0;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+.card-container .card .content .description {
+  font-size: 16px;
+  line-height: 21px;
+  color: #000000;
+  font-weight: 400;
+  font-family: "Roboto", sans-serif;
+  display: -webkit-box;
+  -webkit-line-clamp: 6;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
 }
 
 .custom-input {
