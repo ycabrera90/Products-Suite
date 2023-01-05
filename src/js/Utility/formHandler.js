@@ -23,20 +23,26 @@ export const formHandler = (domId) => {
     let checkbox = form.querySelector("input#acept");
 
     if (!validateName(nameInput.value)) {
-      //   alert("Su nombre debe tener al menos 2 caracteres");
       nameInput.parentElement.classList.add("error");
+      nameInput.parentElement.lastElementChild.textContent =
+        "Su nombre debe tener al menos 2 caracteres";
+      nameInput.parentElement.firstElementChild.classList.add("hidden");
       return;
     }
 
     if (!validateLastName(lastNameInput.value)) {
-      //   alert("Su apellido debe tener al menos 2 caracteres");
       lastNameInput.parentElement.classList.add("error");
+      lastNameInput.parentElement.lastElementChild.textContent =
+        "Su apellido debe tener al menos 2 caracteres";
+      lastNameInput.parentElement.firstElementChild.classList.add("hidden");
       return;
     }
 
     if (!validateEmail(emailInput.value)) {
-      //   alert("Su email debe tener el formato correcto");
       emailInput.parentElement.classList.add("error");
+      emailInput.parentElement.lastElementChild.textContent =
+        "Su email debe tener el formato correcto";
+      emailInput.parentElement.firstElementChild.classList.add("hidden");
       return;
     }
 
@@ -53,13 +59,15 @@ export const formHandler = (domId) => {
     }
 
     if (!validateCedula(ciInput.value)) {
-      //   alert("Introduzca u cedula sin puntos ni guiones");
       ciInput.parentElement.classList.add("error");
+      ciInput.parentElement.lastElementChild.textContent =
+        "Introduzca u cedula sin puntos ni guiones";
+      ciInput.parentElement.firstElementChild.classList.add("hidden");
       return;
     }
 
     if (!checkbox.checked) {
-    //   alert("Debe aceptar las bases y condiciones");
+      //   alert("Debe aceptar las bases y condiciones");
       checkbox.parentElement.classList.add("error");
       return;
     }

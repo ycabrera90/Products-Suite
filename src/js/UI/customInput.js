@@ -6,6 +6,7 @@ export const customInput = (domId, label, placeholder, type) => {
             <input type="${
               type ? type : "text"
             }" id="${label}" placeholder="${placeholder}" />
+            <p></p>
         </div>
     `;
 
@@ -28,6 +29,11 @@ export const customInput = (domId, label, placeholder, type) => {
     // input focus
     inputDOM.addEventListener("focus", (e) => {
       inputDOM.parentElement.classList.remove("error");
+      inputDOM.parentElement.lastElementChild.innerHTML = "";
+      
+      if(inputDOM.value !== ""){
+        inputDOM.parentElement.firstElementChild.classList.remove("hidden");
+      }
     });
   }, 10);
 };

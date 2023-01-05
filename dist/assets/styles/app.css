@@ -383,6 +383,14 @@
   font-size: 8px;
   color: rgba(0, 0, 0, 0.448);
 }
+.custom-input p {
+  display: block;
+  font-family: "Roboto", sans-serif;
+  font-size: 8px;
+  color: red;
+  margin: 0;
+  opacity: 0.8;
+}
 .custom-input input {
   display: block;
   font-family: "Roboto", sans-serif;
