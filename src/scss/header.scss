@@ -125,7 +125,7 @@
                 .img-large {
                     display: none;
                     position: absolute;
-                    
+
                     @media(min-width: 40rem) {
                         display: block;
                         right: 0px;
@@ -138,8 +138,8 @@
 
                 .cost-container {
                     position: absolute;
-                    top: 115px;
-                    left: 93px;
+                    top: 157px;
+                    left: 232px;
 
                     .currency {
                         font-size: 19px;
@@ -147,7 +147,13 @@
                         font-weight: 900;
                         font-family: "Roboto";
                         margin: 0;
+
+                        @media (min-width: 40rem) {
+                            font-size: 41px;
+                            margin-left: 10px;
+                        }
                     }
+
 
                     .cost {
                         display: flex;
@@ -159,6 +165,11 @@
                             font-weight: 900;
                             font-family: "Roboto";
                             margin: 0;
+
+                            @media (min-width: 40rem) {
+                                font-size: 146px;
+                                line-height: 112px;
+                            }
                         }
 
                         .plan {
@@ -172,12 +183,13 @@
                                 font-weight: 900;
                                 font-family: "Roboto";
                                 margin: 0;
+
+                                @media (min-width: 40rem) {
+                                    font-size: 39px;
+                                }
                             }
                         }
                     }
-
-
-
                 }
             }
         }
