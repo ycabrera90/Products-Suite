@@ -1,0 +1,112 @@
+.header {
+    height: 420px;
+    background: #d2d2d2;
+
+    .slide-container {
+        display: flex;
+        justify-content: space-around;
+        margin: 0 auto;
+        padding: 0 5rem;
+        // border: red 1px solid;
+
+        .product-info {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            height: 420px;
+
+            h3 {
+                opacity: 0.502;
+                font-size: 42px;
+                text-transform: uppercase;
+                color: #000000;
+                font-weight: 300;
+                font-family: "Roboto";
+                margin: 0 0.5rem;
+            }
+
+            h1 {
+                opacity: 0.502;
+                font-size: 170px;
+                line-height: 160px;
+
+                color: #000000;
+                font-weight: 900;
+                font-family: "Roboto";
+                margin: 0;
+            }
+
+            button {
+                display: block;
+                width: 358px;
+                height: 90px;
+                border-radius: 10px;
+                background-color: #4da6e4;
+                border: none;
+                margin: 0.5rem;
+                cursor: pointer;
+
+                font-size: 28px;
+                letter-spacing: 8px;
+                color: #ffffff;
+                font-weight: 700;
+                font-family: "Roboto";
+            }
+        }
+
+        .product-cost {
+            height: 420px;
+            margin-left: -47px;
+            margin-top: -55px;
+            position: relative;
+
+            img {
+                width: 677px;
+                height: 633px;
+            }
+
+            .cost-container {
+                width: fit-content;
+                position: absolute;
+                top: 225px;
+                left: 225px;
+
+                .currency {
+                    font-size: 41px;
+                    color: #ffffff;
+                    font-weight: 900;
+                    font-family: "Roboto";
+                    margin: 0;
+                }
+
+                .cost {
+                    display: flex;
+                }
+
+                .cost-value {
+                    font-size: 146px;
+                    line-height: 135px;
+                    color: #ffffff;
+                    font-weight: 900;
+                    font-family: "Roboto";
+                    margin: 0;
+                }
+
+                .plan {
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: space-between;
+                    padding: 0.5rem 0;
+
+                    > h3 {
+                        font-size: 39px;
+                        color: #ffffff;
+                        font-weight: 900;
+                        font-family: "Roboto";
+                        margin: 0;
+                    }
+                }
+            }
+        }
+    }
+}

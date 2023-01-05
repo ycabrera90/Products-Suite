@@ -10,23 +10,24 @@ import { formHandler } from "./Utility/formHandler";
 
 class App {
     static init() {
-
+        // render header
+        
 
         // render cards
-        cardArticle("cardContainer", articles );
+        // cardArticle("cardContainer", articles );
         
         // render of form fields 
-        customInput("userNameDatas", "NOMBRE", "Nombre");
-        customInput("userNameDatas", "APELLIDO", "Apellido");
-        customInput("userEmailDatas", "E-MAIL", "e-Mail", "email");
-        customSelect("userLocationDatas", "Departamento", dptosLocs);
-        customSelect("userLocationDatas", "Localidad", dptosLocs, "Departamento");
-        customInput("userCiDatas", "CI", "1.111.111-1");
-        customCheckbox("userCiDatas", "Acepto las bases y condiciones")
-        customSubmitButton("submitButton", "ENVIAR");
+        // customInput("userNameDatas", "NOMBRE", "Nombre");
+        // customInput("userNameDatas", "APELLIDO", "Apellido");
+        // customInput("userEmailDatas", "E-MAIL", "e-Mail", "email");
+        // customSelect("userLocationDatas", "Departamento", dptosLocs);
+        // customSelect("userLocationDatas", "Localidad", dptosLocs, "Departamento");
+        // customInput("userCiDatas", "CI", "1.111.111-1");
+        // customCheckbox("userCiDatas", "Acepto las bases y condiciones")
+        // customSubmitButton("submitButton", "ENVIAR");
 
-        // form logic
-        formHandler("userDatasForm");
+        // // form logic
+        // formHandler("userDatasForm");
     }
 }
 
