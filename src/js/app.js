@@ -7,7 +7,6 @@ import { dptosLocs } from "./Mocks/departments";
 
 class App {
     static init() {
-
         // render of form fields 
         customInput("userNameDatas", "NOMBRE", "Nombre");
         customInput("userNameDatas", "APELLIDO", "Apellido");
@@ -17,15 +16,10 @@ class App {
         customInput("userCiDatas", "CI", "1.111.111-1");
         customCheckbox("userCiDatas", "Acepto las bases y condiciones")
         customSubmitButton("submitButton", "ENVIAR");
-
-        // document.getElementById('Departamento').addEventListener("change", (e) => {
-        //     console.log('sadf')
-        //   });
     }
-
 }
 
-App.init();
+addEventListener("DOMContentLoaded", App.init);
 
 
 
