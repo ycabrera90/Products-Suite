@@ -16,14 +16,10 @@ export const customInput = (domId, label, placeholder, type) => {
       // show the label only when the input is not empty
       const labelDOM = container.querySelector(`label[for="${label}"]`);
       if (inputValue === "") {
-        console.log(labelDOM);
         labelDOM.classList.add("hidden");
       } else {
         labelDOM.classList.remove("hidden");
       }
-
-      
-
     });
   }, 10);
 };

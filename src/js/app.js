@@ -4,6 +4,7 @@ import { customSelect } from "./UI/customSelect";
 import { customSubmitButton } from "./UI/customSubmitButton";
 
 import { dptosLocs } from "./Mocks/departments";
+import { formHandler } from "./Utility/formHandler";
 
 class App {
     static init() {
@@ -16,6 +17,9 @@ class App {
         customInput("userCiDatas", "CI", "1.111.111-1");
         customCheckbox("userCiDatas", "Acepto las bases y condiciones")
         customSubmitButton("submitButton", "ENVIAR");
+
+        // form logic
+        formHandler("userDatasForm");
     }
 }
 
