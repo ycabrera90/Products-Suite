@@ -100,6 +100,8 @@
                 right: -70px;
                 width: 245px;
                 overflow: hidden;
+                border: red 1px solid;
+
 
                 @media (min-width: 40rem) {
                     height: 420px;
@@ -138,8 +140,15 @@
 
                 .cost-container {
                     position: absolute;
-                    top: 157px;
-                    left: 232px;
+                    top: 115px;
+                    left: 93px;
+                    
+                    @media (min-width: 40rem) {
+                        top: 157px;
+                        left: 232px;
+                        
+                    }
+                    
 
                     .currency {
                         font-size: 19px;

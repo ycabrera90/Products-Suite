@@ -96,6 +96,7 @@
   right: -70px;
   width: 245px;
   overflow: hidden;
+  border: red 1px solid;
 }
 @media (min-width: 40rem) {
   .header .product-slider .slide-container .product-cost {
@@ -134,8 +135,14 @@
 }
 .header .product-slider .slide-container .product-cost .cost-container {
   position: absolute;
-  top: 157px;
-  left: 232px;
+  top: 115px;
+  left: 93px;
+}
+@media (min-width: 40rem) {
+  .header .product-slider .slide-container .product-cost .cost-container {
+    top: 157px;
+    left: 232px;
+  }
 }
 .header .product-slider .slide-container .product-cost .cost-container .currency {
   font-size: 19px;
