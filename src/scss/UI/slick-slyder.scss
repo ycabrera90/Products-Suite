@@ -1,6 +1,7 @@
 .slider {
     width: 100%;
     height: 100%;
+    overflow: hidden;
 
     &>div {
         height: 100%;
@@ -35,7 +36,7 @@
     z-index: 1;
     display: none !important; // <-- original doesn't have this
 
-    @media (min-width: 40rem) {
+    @media (min-width: 840px) {
         display: block !important; // <-- original doesn't have this
     }
 }
@@ -45,7 +46,7 @@
     z-index: 1;
     display: none !important; // <-- original doesn't have this
 
-    @media (min-width: 40rem) {
+    @media (min-width: 840px) {
         display: block !important;  // <-- original doesn't have this
     }
 }
@@ -60,4 +61,8 @@
 
 .slick-slide.slick-cloned {
     opacity: 0;     // <-- original doesn't have this
+}
+
+.slick-list.draggable {
+    overflow: visible;
 }
