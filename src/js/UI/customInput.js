@@ -10,7 +10,10 @@ export const customInput = (domId, label, placeholder, type) => {
     `;
 
   setTimeout(() => {
-    container.querySelector(`input#${label}`).addEventListener("input", (e) => {
+    let inputDOM = container.querySelector(`input#${label}`);
+
+    // input change
+    inputDOM.addEventListener("input", (e) => {
       const inputValue = e.target.value;
 
       // show the label only when the input is not empty
@@ -20,6 +23,11 @@ export const customInput = (domId, label, placeholder, type) => {
       } else {
         labelDOM.classList.remove("hidden");
       }
+    });
+
+    // input focus
+    inputDOM.addEventListener("focus", (e) => {
+      inputDOM.parentElement.classList.remove("error");
     });
   }, 10);
 };

@@ -374,6 +374,9 @@
   height: 40px;
   min-width: 200px;
 }
+.custom-input.error {
+  border: 1px solid red;
+}
 .custom-input label {
   display: block;
   font-family: "Roboto", sans-serif;
@@ -404,6 +407,9 @@
   height: 40px;
   min-width: 200px;
 }
+.custom-select.error {
+  border: 1px solid red;
+}
 .custom-select label {
   display: block;
   font-family: "Roboto", sans-serif;
@@ -423,6 +429,10 @@
   display: flex;
   align-items: center;
   gap: 0.4rem;
+}
+.custom-ckeckbox.error {
+  border: 1px solid red;
+  border-radius: 5px;
 }
 .custom-ckeckbox label {
   font-family: "Roboto", sans-serif;

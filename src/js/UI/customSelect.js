@@ -18,6 +18,7 @@ export const customSelect = (domId, placeholder, items, ref) => {
       </div>
     `;
 
+  // load the options based to the ref
   if (items && ref) {
     document.getElementById(ref).addEventListener("change", (e) => {
       content = `<option value="">${placeholder}</option>`;
@@ -30,4 +31,11 @@ export const customSelect = (domId, placeholder, items, ref) => {
       }
     });
   }
+
+  // remove the error class when the select is focused
+  setTimeout(() => {
+    container.querySelector(`select#${placeholder}`).addEventListener("focus", (e) => {
+      e.target.parentElement.classList.remove("error");
+    });
+  }, 10);
 };

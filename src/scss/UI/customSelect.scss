@@ -11,6 +11,10 @@
     height: 40px;
     min-width: 200px;
 
+    &.error {
+        border: 1px solid red;
+    }
+
     label {
         display: block;
         font-family: 'Roboto', sans-serif;

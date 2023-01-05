@@ -1,4 +1,11 @@
-import { validateCedula, validateDepartment, validateEmail, validateLastName, validateLocation, validateName } from "./inputsValidators";
+import {
+  validateCedula,
+  validateDepartment,
+  validateEmail,
+  validateLastName,
+  validateLocation,
+  validateName,
+} from "./inputsValidators";
 
 export const formHandler = (domId) => {
   let form = document.getElementById(domId);
@@ -6,47 +13,55 @@ export const formHandler = (domId) => {
   form.addEventListener("submit", (e) => {
     e.preventDefault();
 
-    let nameInputValue = form.querySelector("input#NOMBRE").value;
-    let lastNameInputValue = form.querySelector("input#APELLIDO").value;
-    let emailInputValue = form.querySelector("input#E-MAIL").value;
-    let dptoSelectValue = form.querySelector("select#Departamento").value;
-    let locSelectValue = form.querySelector("select#Localidad").value;
-    let ciInputValue = form.querySelector("input#CI").value;
-    let checkboxValue = form.querySelector("input#acept").checked;
+    let nameInput = form.querySelector("input#NOMBRE");
+    let lastNameInput = form.querySelector("input#APELLIDO");
+    let emailInput = form.querySelector("input#E-MAIL");
+    let dptoSelect = form.querySelector("select#Departamento");
+    let locSelect = form.querySelector("select#Localidad");
+    let ciInput = form.querySelector("input#CI");
 
-    if (!validateName(nameInputValue)) {
-      alert("Su nombre debe tener al menos 2 caracteres");
-      return
-    }
+    let checkbox = form.querySelector("input#acept");
 
-    if (!validateLastName(lastNameInputValue)) {
-      alert("Su apellido debe tener al menos 2 caracteres");
-      return
-    }
-
-    if (!validateEmail(emailInputValue)) {
-      alert("Su email debe tener el formato correcto");
-      return
-    }
-
-    if (!validateDepartment(dptoSelectValue)) {
-      alert("Debe seleccionar un departamento");
+    if (!validateName(nameInput.value)) {
+      //   alert("Su nombre debe tener al menos 2 caracteres");
+      nameInput.parentElement.classList.add("error");
       return;
     }
 
-    if (!validateLocation(locSelectValue)) {
-      alert("Debe seleccionar una localidad");
+    if (!validateLastName(lastNameInput.value)) {
+      //   alert("Su apellido debe tener al menos 2 caracteres");
+      lastNameInput.parentElement.classList.add("error");
       return;
     }
 
-    if (!validateCedula(ciInputValue)) {
-      alert("Introduzca u cedula sin puntos ni guiones");
+    if (!validateEmail(emailInput.value)) {
+      //   alert("Su email debe tener el formato correcto");
+      emailInput.parentElement.classList.add("error");
       return;
     }
 
-    if (!checkboxValue) {
-        alert("Debe aceptar las bases y condiciones");
-        return;
+    if (!validateDepartment(dptoSelect.value)) {
+      //   alert("Debe seleccionar un departamento");
+      dptoSelect.parentElement.classList.add("error");
+      return;
+    }
+
+    if (!validateLocation(locSelect.value)) {
+      //   alert("Debe seleccionar una localidad");
+      locSelect.parentElement.classList.add("error");
+      return;
+    }
+
+    if (!validateCedula(ciInput.value)) {
+      //   alert("Introduzca u cedula sin puntos ni guiones");
+      ciInput.parentElement.classList.add("error");
+      return;
+    }
+
+    if (!checkbox.checked) {
+    //   alert("Debe aceptar las bases y condiciones");
+      checkbox.parentElement.classList.add("error");
+      return;
     }
 
     alert("Sus datos han sido enviados de forma correcta");
