@@ -1,3 +1,12 @@
+<p align="center">
+  <a href="https://eip-products-suite.web.app/"
+    ><img
+      src="https://eip-products-suite.web.app/assets/images/project-landing-page.gif"
+      alt="EIP Studios"
+     />
+  </a>
+</p>
+
 # Products suite
 On this [web page](https://eip-products-suite.web.app/) you can see the layout of a generic products suite.
 
